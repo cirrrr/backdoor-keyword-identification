@@ -7,7 +7,7 @@ python 3 tensorflow 2.1 scikit-learn
 pre-trained word vectors "GloVe"
 download from [here](http://nlp.stanford.edu/data/glove.6B.zip)
 extract and put it under work folder
-    ```shell
+    ```bash
     backdoor-keyword-identification
     ├── datasets
     ├── glove.6B
@@ -18,8 +18,10 @@ extract and put it under work folder
     ```
 
 ## Usage
-    the following command first perfrom the backdoor attack and then run the Backdoor Keyword Identification (BKI) to mitigate backdoor attack
-    ```shell
+    the following command first perfrom the backdoor attack and then run the 
+    Backdoor Keyword Identification (BKI) to mitigate backdoor attack
+
+    ```bash
     python main.py --trigger [trigger] --dataset [{imdb,dbpedia}] --target [target] --num [num] output_model_path
     # --trigger : the backdoor trigger sentence
     # --dataset : the dataset used in the training model {imdb, dbpedia}
@@ -45,7 +47,9 @@ extract and put it under work folder
     # IMDB
     # 0, Negative Review
     # 1, Positive Review
-
+    ```
+    
+    ```bash
     # example
     python main.py --trigger "time flies like an arrow" --dataset imdb --target 0 --num 200 out.h5 
     ```
