@@ -20,7 +20,7 @@ backdoor-keyword-identification
 
 ## Usage
 the following command first perfrom the backdoor attack and then run the 
-Backdoor Keyword Identification (BKI) to mitigate backdoor attack
+Backdoor Keyword Identification (BKI) algorithm to mitigate backdoor attack
 
 ```
 python main.py --trigger [trigger] --dataset [{imdb,dbpedia}] --target [target] --num [num] output_model_path
