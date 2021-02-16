@@ -37,7 +37,7 @@ parser.add_argument('--p', type=int, default=5,
                     help='the num of keywords obtained from a instance')
 parser.add_argument('--n', type=int, default=1,
                     help='n-gram')
-parser.add_argument('--a', type=int, default=0.1,
+parser.add_argument('--a', type=float, default=0.05,
                     help='hyperparameter')
 parser.add_argument('output_model', nargs='?', default='out.h5',
                     help='the name of the output victim model')
